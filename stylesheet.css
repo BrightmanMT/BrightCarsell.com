@@ -1,6 +1,6 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-/* Reset some default styles */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ nav a {
 }
 
 nav a img {
-  max-height: 70px; /* Example height, adjust as needed */
+  max-height: 70px;
   width: 100px;
 }
 
@@ -40,7 +40,7 @@ nav a:hover {
 .background-image{
   background-image: url('IMAGES/wp3364152.jpg');
     background-size: 100%;
-    height: 700px;
+    height: 500px;
     background-repeat: no-repeat;
 }
 .overlay-text h1 {
@@ -50,32 +50,34 @@ nav a:hover {
 }
 
 .overlay-text p {
-  font-size: 20px;
-  color: rgb(197, 245, 5);
+  font-size: 25px;
+  color: rgb(238, 19, 219);
 }
+
 .additional-image {
+  display: flex;
   max-width: 100%;
   height: auto;
   position: absolute;
-  bottom: 150px; /* Adjust this value as needed to position the image */
-  right: 20px; /* Adjust this value as needed to position the image */
+  bottom: 150px; 
+  right: 20px;
 }
 
-
+/*not working*/
 @keyframes moveCar {
   50% {
-      left: 50%; /* Move the car to the middle */
-      transform: translate(-50%, -50%); /* Center the image horizontally */
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
   100% {
-      left: 50%; /* Keep the car at the middle */
+      left: 50%;
       transform: translate(-50%, -50%);
   }
 }
 
 .section-heading {
   text-align: center;
-  margin-top: 50px; /* Adjust the margin as needed */
+  margin-top: 50px;
 }
 
 .content_second {
@@ -86,14 +88,14 @@ nav a:hover {
 .offer-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px; /* Adjust the maximum width as needed */
+  max-width: 1200px;
   width: 100%;
 }
 
 .offer {
   flex: 1;
   text-align: center;
-  margin: 0 10px; /* Adjust the margin as needed */
+  margin: 0 10px; 
   border: 1px solid black;
 }
 
@@ -122,7 +124,7 @@ nav a:hover {
 }
 
 .car-section {
-  max-width: 800px; /* Adjust as needed */
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -135,7 +137,7 @@ nav a:hover {
 }
 
 .car-text img {
-  width: 250px; /* Adjust as needed */
+  width: 250px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -154,7 +156,7 @@ nav a:hover {
 }
 
 .car-rating {
-  color: #ffd700; /* Yellow color for stars */
+  color: #ffd700; /* Yellow color for rating stars */
   font-size: 24px;
   margin-top: 10px;
 }
@@ -179,11 +181,11 @@ h2{
 .car {
   position: relative;
   margin-bottom: 20px;
-  width: 800px; /* Set width to 800px */
+  width: 800px;
 }
 
 .car img {
-  width: 100%; /* Adjust image width to fill the container */
+  width: 100%;
   height: auto;
 }
 
@@ -222,7 +224,7 @@ h2{
 }
 
 .customer img {
-  width: 70px; /* Adjust as needed */
+  width: 70px; 
   height: 60px;
   margin-right: 10px;
   border-radius: 37px;
@@ -239,7 +241,7 @@ h2{
 }
 
   
-  /* Style the chatbot toggler button */
+  /* now i am Styling the chatbot toggler button */
   .chatbot-toggler {
     position: fixed;
     bottom: 20px;
@@ -258,7 +260,7 @@ h2{
     z-index: 999;
   }
   
-  /* Style the chatbot window */
+  /* the chatbot window */
   .chatbot {
     position: fixed;
     bottom: 20px;
@@ -273,7 +275,7 @@ h2{
     z-index: 999;
   }
   
-  /* Style the chat header */
+  /* the chat header */
   .chatbot header {
     background-color: #007bff;
     color: #fff;
@@ -291,16 +293,16 @@ h2{
     float: right;
   }
   
-  /* Style the chatbox */
+  /* the chatbox */
   .chatbox {
     list-style-type: none;
     margin: 0;
     padding: 10px;
-    max-height: calc(80vh - 120px); /* Adjust according to your needs */
+    max-height: calc(80vh - 120px);
     overflow-y: auto;
   }
   
-  /* Style individual chat messages */
+  /* here am Styling individual chat messages */
   .chat {
     display: flex;
     align-items: flex-start;
@@ -320,11 +322,11 @@ h2{
     border-radius: 15px;
     padding: 10px;
     margin: 0 10px;
-    max-width: 70%; /* Adjust as needed */
+    max-width: 70%;
     word-wrap: break-word;
   }
   
-  /* Style the chat input */
+  /*now am  Styling the chat input */
   .chat-input {
     border-top: 1px solid #ccc;
     padding: 10px;
@@ -383,17 +385,19 @@ h2{
 .contact-form textarea {
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #2df00b;
   border-radius: 5px;
+  
 }
 
 .contact-form input[type="submit"] {
-  background-color: #007bff;
+  background-color: #00ff26;
   color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(140, 93, 233, 0.1);
 }
 
 .contact-form input[type="submit"]:hover {
@@ -401,7 +405,7 @@ h2{
 }
 
 .footer {
-  background-color: #f4f4f4;
+  background-color: black;
   padding: 20px;
   text-align: center;
 }
@@ -423,7 +427,7 @@ h2{
 }
 
 .footer-links a {
-  color: #333;
+  color:white;
   text-decoration: none;
   margin-right: 20px;
 }
@@ -431,5 +435,10 @@ h2{
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+
+/*new added css*/
+
+
 
 
