@@ -22,23 +22,24 @@ document.addEventListener("DOMContentLoaded", function() {
         const lowercaseMessage = message.toLowerCase();
 
         // Check for different questions or keywords and generate appropriate responses
-        if (lowercaseMessage.includes("how are you")) {
+         if (lowercaseMessage.includes("how are you")) {
             response = "I'm doing well, thank you! How can I assist you?";
         } else if (lowercaseMessage.includes("hello") || lowercaseMessage.includes("hi")) {
             response = "Hello! How can I help you today?";
         } else if (lowercaseMessage.includes("bye")) {
             response = "Goodbye! Have a great day!";
-        } else if (lowercaseMessage.includes("aditya educational institutions")) {
-            response = "Aditya Educational Institutions has a rich history of providing quality education since 1984. Is there anything specific you'd like to know about them?";
-        } else if (lowercaseMessage.includes("courses") || lowercaseMessage.includes("academics")) {
-            response = "Aditya Educational Institutions offer courses and academics from KG to PG. Is there a particular course you are interested in?";
-        } else if (lowercaseMessage.includes("visionary") || lowercaseMessage.includes("founder")) {
-            response = "Shri N. Sesha Reddy, a visionary and prominent educationist, founded Aditya Educational Institutions in 1984. Do you want to know more about their vision?";
+        } else if (lowercaseMessage.includes("Car cost and warranty offer")) {
+            response = "Car prizes starts from 100 000 usd, it depends on which brand do you prefer and also your budget. We offer 20 years warranty services and if anything happens to the car within this period of time you are free to return the car?";
+        } else if (lowercaseMessage.includes("availabe") || lowercaseMessage.includes("time conduct")) {
+            response = "We are available 24/7 on this mobile number +263784151721. We open from monday to saturday time 9 am to 6 pm?";
+        } else if (lowercaseMessage.includes("founder") || lowercaseMessage.includes("legal")) {
+            response = "The founder of this company is Brightman Mutumwapavi who recently resides in Andhra Pradesh India. The company opperates under legal recognition from GVT ?";
         } else if (lowercaseMessage.includes("brightman mutumwapavi")) {
-            response = "Hello Brightman! It's great to meet you. Pursuing a Bachelor's degree in Data Science and being a coder sounds like an exciting journey! Creating your own chatbot as a project of passion shows your dedication and skills. If you have any questions or need assistance with anything, feel free to ask!";
+            response = "Brightman worked so hard to open this company!.Now he is pursuing a Bachelor's degree in Data Science and being a coder sounds like an exciting journey! Creating his own chatbots as a project of passion shows his dedication and skills. If you have any questions or need assistance with anything, feel free to ask!";
         } else {
             response = "I'm not sure how to respond to that. Can you please be more specific?";
         }
+
 
         // Append the response to the chatbox
         appendMessage(response, "incoming");
