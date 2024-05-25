@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to handle sending message
     function sendMessage(message) {
         appendMessage(message, "outgoing");
-        // Here you can add logic to generate a response based on the user's message
+        // Here  am addin logic to generate a response
         generateResponse(message);
     }
 
     // Function to generate a response
     function generateResponse(message) {
         let response;
-        // Convert the user's message to lowercase for case-insensitive matching
+        // handle the case of lower cases by the users
         const lowercaseMessage = message.toLowerCase();
 
         // Check for different questions or keywords and generate appropriate responses
@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
 
-        // Append the response to the chatbox
+        
         appendMessage(response, "incoming");
     }
 
-    // Function to append message to chatbox
+    
     function appendMessage(message, type) {
         const li = document.createElement("li");
         li.classList.add("chat", type);
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         chatbox.scrollTop = chatbox.scrollHeight; // Auto-scroll to bottom
     }
 
-    // Event listener for sending message
+    // sending message
     document.getElementById("send-btn").addEventListener("click", function() {
         const message = chatInput.value.trim();
         if (message !== "") {
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Event listener for pressing Enter key
+    // pressing Enter key
     chatInput.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             const message = chatInput.value.trim();
